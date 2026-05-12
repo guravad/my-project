@@ -1,6 +1,13 @@
 name: Greetings
 
-on: [pull_request_target, issues]
+on:
+  push:
+    branches:
+    - main
+    - release/*
+  pull_request:
+    branches:
+    - main
 
 jobs:
   greeting:
